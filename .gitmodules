@@ -1,6 +1,6 @@
 [submodule "frontend"]
 	path = frontend
-	url = git@github-personal:mynul-islam-madhurjo/youtube-frontend.git
+	url = git@github.com:mynul-islam-madhurjo/youtube-frontend.git
 [submodule "backend"]
 	path = backend
-	url = git@github-personal:mynul-islam-madhurjo/youtube-backend.git
+	url = git@github.com:mynul-islam-madhurjo/youtube-backend.git
