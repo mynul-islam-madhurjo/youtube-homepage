@@ -83,7 +83,7 @@ Youtube Homepage/
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone --recurse-submodules https://github.com/mynul-islam-madhurjo/youtube-homepage.git
 cd "Youtube Homepage"
 ```
 
