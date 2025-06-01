@@ -14,8 +14,6 @@ This project consists of two main components:
 - **Video Recommendations**: Right sidebar with video thumbnails, duration badges, and metadata
 - **Responsive Design**: Mobile, tablet, and desktop layouts
 - **Category Filters**: Main content categories and sub-categories
-- **Search Functionality**: Search bar with API integration
-- **Dynamic Data**: Real video data served from Django API
 
 ## 🛠️ Tech Stack
 
@@ -33,30 +31,46 @@ This project consists of two main components:
 - **CORS**: django-cors-headers
 - **Image Handling**: Pillow
 
-## 📁 Project Structure 
+## 📁 Project Structure
+
+```
 Youtube Homepage/
-├── frontend/ # Next.js frontend application
-│ ├── src/
-│ │ ├── app/ # Next.js App Router pages
-│ │ ├── components/ # React components
-│ │ │ ├── layout/ # Layout components (Header, MainContent)
-│ │ │ ├── video/ # Video-related components
-│ │ │ ├── common/ # Shared components
-│ │ │ └── ui/ # shadcn/ui components
-│ │ ├── hooks/ # Custom React hooks
-│ │ └── lib/ # Utility functions and API helpers
-│ ├── public/ # Static assets
-│ └── package.json
-├── backend/ # Django backend application
-│ └── youtube_api/
-│ ├── api/ # Django app for API endpoints
-│ ├── youtube_bff/ # Django project settings
-│ ├── manage.py
-│ └── db.sqlite3
-├── static/ # Shared static assets
-│ ├── thumbnails/ # Video thumbnail images
-│ └── avatars/ # Channel avatar images
+├── frontend/                    # Next.js frontend application
+│   ├── src/
+│   │   ├── app/                # Next.js App Router pages
+│   │   ├── components/         # React components
+│   │   │   ├── layout/         # Layout components (Header, MainContent)
+│   │   │   ├── video/          # Video-related components
+│   │   │   ├── common/         # Shared components
+│   │   │   └── ui/             # shadcn/ui components
+│   │   ├── hooks/              # Custom React hooks
+│   │   └── lib/                # Utility functions and API helpers
+│   ├── public/                 # Static assets
+│   └── package.json
+├── backend/                    # Django backend application
+│   └── youtube_api/
+│       ├── api/                # Django app for API endpoints
+│       ├── youtube_bff/        # Django project settings
+│       ├── manage.py
+│       └── db.sqlite3
+├── static/                     # Shared static assets
+│   ├── thumbnails/             # Video thumbnail images
+│   └── avatars/                # Channel avatar images
 └── README.md
+```
+
+### Key Directories
+
+| Directory | Description |
+|-----------|-------------|
+| `frontend/src/app/` | Next.js App Router pages and layouts |
+| `frontend/src/components/` | Reusable React components organized by feature |
+| `frontend/src/hooks/` | Custom React hooks for API calls and state management |
+| `frontend/src/lib/` | Utility functions, API helpers, and configurations |
+| `backend/youtube_api/api/` | Django REST API endpoints and models |
+| `backend/youtube_api/youtube_bff/` | Django project settings and configuration |
+| `static/thumbnails/` | Video thumbnail images served by Django |
+| `static/avatars/` | Channel avatar images served by Django |
 
 ## 🚀 Quick Start
 
